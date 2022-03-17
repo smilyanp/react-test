@@ -19,17 +19,21 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## Overview
 
-The project has 3 tasks. First we will list a set of images from an API. Then we will create a new page where you can click and see more details about an image. And finally we can introduce searching functionality.
+The project has 3 tasks. First we will list a set of images from an API. We will then introduce searching functionality, so that when a user searches the list of images will update. Finally, we will create a new page so that when you click a given image, it will take you to that page and it will display more details about the image.
 
 ### Task 1
 
 Use API endpoint to list all images for the star search result https://images-api.nasa.gov/search?q=star
 
 For each image display
-- The image (no videos)
+- The image
 - The title
 
 ### Task 2
+
+On the original page from Task 1, add a search box at the top of the page. When a user types make an updated API call to https://images-api.nasa.gov/search?q={searchTerm} and display the new results on the page.
+
+### Task 3
 
 Add functionality to be able to click on an image and go to a separate page where you can see more details about the image. Use https://images-api.nasa.gov/asset/{nasa_id} endpoint.
 
@@ -38,7 +42,3 @@ On the new page display additional information for the image. Display
 - The title
 - Description
 - Date it was created
-
-### Task 3
-
-On the original page from Task 1, add a search box at the top of the page. When a user types make an updated API call to https://images-api.nasa.gov/search?q={searchTerm} and display the new results on the page.
